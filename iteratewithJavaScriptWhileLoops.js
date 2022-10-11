@@ -4,3 +4,13 @@
 
 //solution:
 
+const myArray = [];
+
+let iteration = 5;
+
+while (iteration >= 0) {
+	myArray.push(iteration);
+	iteration--;
+}
+
+console.log(myArray);
