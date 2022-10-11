@@ -4,14 +4,13 @@
 
 //solution:
 
-function countdown(n) {
-
+function countup(n) {
 	if (n < 1) {
-		return []
+		return [];
 	} else {
-		const arr = countdown(n - 1);
-		console.log(arr);
-		arr.push(n)
-		return arr.reverse()
+		const countArray = countup(n - 1);
+		countArray.unshift(n)
+		return countArray;
 	}
 }
+console.log(countup(5));
