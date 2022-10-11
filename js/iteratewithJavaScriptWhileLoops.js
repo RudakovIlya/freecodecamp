@@ -12,5 +12,3 @@ while (iteration >= 0) {
 	myArray.push(iteration);
 	iteration--;
 }
-
-console.log(myArray);
