@@ -24,4 +24,3 @@ function makeList(arr) {
 
 const failuresList = makeList(result.failure);
 
-console.log(failuresList);
