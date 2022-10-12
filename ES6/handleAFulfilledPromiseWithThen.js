@@ -27,4 +27,4 @@ const makeServerRequest = new Promise((resolve, reject) => {
 	}
 });
 
-makeServerRequest.then(() => console.log(2 + 2))
+makeServerRequest.then(result => console.log(result))
