@@ -22,7 +22,7 @@ function copyMachine(arr, num) {
 
 	while (num >= 1) {
 
-		newArr.push([...arr])
+		newArr.push([...arr]);
 
 		num--;
 
