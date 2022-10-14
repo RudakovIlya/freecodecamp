@@ -11,6 +11,35 @@ users.hasOwnProperty('Alan');
 
 // Both of these would return true.
 
-// task: Use the delete keyword to remove the oranges, plums, and strawberries keys from the foods object.
+// task: Finish writing the function so that it returns true if the object passed to it contains all four names, Alan, Jeff, Sarah and Ryan and returns false otherwise.
 
 // solution:
+
+let users = {
+	Alan: {
+		age: 27,
+		online: true
+	},
+	Jeff: {
+		age: 32,
+		online: true
+	},
+	Sarah: {
+		age: 48,
+		online: true
+	},
+	Ryan: {
+		age: 19,
+		online: true
+	}
+};
+
+function isEveryoneHere(userObj) {
+
+	return userObj.hasOwnProperty("Alan") &&
+		userObj.hasOwnProperty("Jeff") &&
+		userObj.hasOwnProperty("Sarah") &&
+		userObj.hasOwnProperty("Ryan")
+}
+
+console.log(isEveryoneHere(users));
