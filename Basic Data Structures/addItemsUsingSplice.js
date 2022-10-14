@@ -24,11 +24,9 @@ console.log(numbers);
 
 function htmlColorNames(arr) {
 
-	const startIndex = 0;
+	arr.splice(0, 2, 'DarkSalmon', 'BlanchedAlmond')
 
-	const amountToDelete = 2;
-
-	return arr.splice(startIndex, amountToDelete, 'DarkSalmon', 'BlanchedAlmond')
+	return arr
 
 }
 
