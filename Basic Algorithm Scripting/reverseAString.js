@@ -7,3 +7,11 @@
 // Your result must be a string.
 
 //solution:
+
+function reverseString(str) {
+
+	return str.split('').reverse().join('');
+
+}
+
+reverseString("hello");
