@@ -5,3 +5,9 @@
 // This challenge can be solved with the .endsWith() method, which was introduced in ES2015. But for the purpose of this challenge, we would like you to use one of the JavaScript substring methods instead.
 
 //solution:
+
+function confirmEnding(str, target) {
+
+	return str.slice(-target.length) == target;
+
+}
