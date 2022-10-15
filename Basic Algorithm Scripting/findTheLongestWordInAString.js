@@ -5,3 +5,11 @@
 // Your response should be a number.
 
 //solution:
+
+function findLongestWordLength(str) {
+
+	return Math.max(...str.split(' ').map(item => item.length));
+
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
