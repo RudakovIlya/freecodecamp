@@ -48,7 +48,7 @@ function factorialize(num) {
 
 	while (num) {
 
-		result *= n--;
+		result *= num--;
 
 	}
 
