@@ -12,8 +12,10 @@
 
 function mutation(arr) {
 
+	// Берем первый элемент массива, переводим его в нижний регистр, затем делаем из него массив и проверяем с помощью метода every и indexOf каждое вхождение текущей буквы в нулевом элементе массива.
+
 	return arr[1].toLowerCase().split("").every((letter) => {
-		console.log(letter);
+
 		return arr[0].toLowerCase().indexOf(letter) !== -1;
 
 	});
