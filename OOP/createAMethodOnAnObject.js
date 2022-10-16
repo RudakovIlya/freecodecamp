@@ -17,6 +17,17 @@ The example adds the sayName method, which is a function that returns a sentence
 
 */
 
-// task: Print both properties of the dog object to your console.
+// task: Using the dog object, give it a method called sayLegs. The method should return the sentence This dog has 4 legs.
 
 // solution:
+
+
+let dog = {
+	name: "Spot",
+	numLegs: 4,
+	sayLegs() {
+		return `This dog has ${dog.numLegs} legs.`
+	}
+};
+
+dog.sayLegs();
