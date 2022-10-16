@@ -22,6 +22,17 @@ this is a deep topic, and the above example is only one way to use it. In the cu
 
 */
 
-// task: Using the dog object, give it a method called sayLegs. The method should return the sentence This dog has 4 legs.
+// task: Modify the dog.sayLegs method to remove any references to dog. Use the duck example for guidance.
 
 // solution:
+
+
+let dog = {
+	name: "Spot",
+	numLegs: 4,
+	sayLegs: function () { return "This dog has " + this.numLegs + " legs."; }
+};
+
+dog.name = 'Dima'
+
+console.log(dog.sayLegs);
