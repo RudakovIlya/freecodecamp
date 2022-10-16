@@ -19,6 +19,14 @@ This duck object has two property/value pairs: a name of Aflac and a numLegs of 
 
 */
 
-//task: Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.
+//task: Create a dog object with name and numLegs properties, and set them to a string and a number, respectively.
 
 //solution:
+
+let dog = {
+
+	name: 'Dima',
+
+	numLegs: 4,
+
+};
