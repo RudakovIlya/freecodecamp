@@ -10,10 +10,19 @@ let duck = {
 };
 console.log(duck.name);
 
-This duck object has two property/value pairs: a name of Aflac and a numLegs of 2.
+Dot notation is used on the object name, duck, followed by the name of the property, name, to access the value of Aflac.
 
 */
 
-//task: Create a dog object with name and numLegs properties, and set them to a string and a number, respectively.
+//task: Print both properties of the dog object to your console.
 
 //solution:
+
+let dog = {
+	name: "Spot",
+	numLegs: 4
+};
+
+console.log(dog.name)
+
+console.log(dog.numLegs)
