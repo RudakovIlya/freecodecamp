@@ -41,7 +41,9 @@ console.log(prototypeProps);
 //solution:
 
 function Dog(name) {
+
 	this.name = name;
+
 }
 
 Dog.prototype.numLegs = 4;
@@ -66,6 +68,6 @@ for (const prop in beagle) {
 
 }
 
-console.log(ownProps);
+console.log(ownProps); // ['name']
 
-console.log(prototypeProps);
+console.log(prototypeProps); // ['numLegs']
