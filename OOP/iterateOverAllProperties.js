@@ -36,6 +36,36 @@ console.log(prototypeProps);
 
 // console.log(ownProps) would display ["name"] in the console, and console.log(prototypeProps) would display ["numLegs"].
 
-// task: Add a numLegs property to the prototype of Dog.
+// task: Add all of the own properties of beagle to the array ownProps. Add all of the prototype properties of Dog to the array prototypeProps.
 
 //solution:
+
+function Dog(name) {
+	this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy");
+
+let ownProps = [];
+
+let prototypeProps = [];
+
+for (const prop in beagle) {
+
+	if (beagle.hasOwnProperty(prop)) {
+
+		ownProps.push(prop)
+
+	} else {
+
+		prototypeProps.push(prop)
+
+	}
+
+}
+
+console.log(ownProps);
+
+console.log(prototypeProps);
