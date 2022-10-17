@@ -34,3 +34,28 @@ function joinBirdFraternity(candidate) {
 // task: Write a joinDogFraternity function that takes a candidate parameter and, using the constructor property, return true if the candidate is a Dog, otherwise return false.
 
 //solution:
+
+function Dog(name) {
+
+	this.name = name;
+}
+
+Dog.prototype.two = 5;
+
+let beagle = new Dog("Snoopy");
+
+function joinDogFraternity(candidate) {
+
+	if (candidate.constructor === Dog) {
+
+		return true
+
+	} else {
+
+		return false
+
+	}
+
+}
+
+console.log(joinDogFraternity(beagle)); // true
