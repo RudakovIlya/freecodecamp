@@ -64,7 +64,3 @@ Penguin.prototype.fly = function () { return 'Alas, this is a flightless bird.' 
 let penguin = new Penguin();
 
 console.log(penguin.fly());
-
-const b = new Bird();
-
-console.log(b.fly());
