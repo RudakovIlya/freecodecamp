@@ -34,7 +34,8 @@ function Dog(name) {
 
 }
 
-
 let beagle = new Dog("Snoopy");
 
-Dog.prototype.numLegs = 2;
+Dog.prototype.numLegs = 4;
+
+console.log(beagle.numLegs);
