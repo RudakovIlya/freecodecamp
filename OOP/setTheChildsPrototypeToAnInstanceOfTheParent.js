@@ -24,3 +24,26 @@ duck.eat();
 // task: Modify the code so that instances of Dog inherit from Animal.
 
 //solution:
+
+function Animal() { }
+
+Animal.prototype = {
+	constructor: Animal,
+	eat: function () {
+		console.log("nom nom nom");
+	}
+};
+
+function Dog(name, color) {
+
+	this.name = name;
+
+	this.color = color;
+
+}
+
+Dog.prototype = Object.create(Animal.prototype)
+
+let beagle = new Dog('Snoopy', 'black');
+
+beagle.eat() // nom nom nom
