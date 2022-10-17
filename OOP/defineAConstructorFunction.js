@@ -20,6 +20,12 @@ function Bird() {
 
 //Constructors define properties and behaviors instead of returning a value as other functions might.
 
-// task: Modify the dog.sayLegs method to remove any references to dog. Use the duck example for guidance.
+// task: Create a constructor, Dog, with properties name, color, and numLegs that are set to a string, a string, and a number, respectively.
 
 // solution:
+
+function Dog() {
+	this.name = 'Dima',
+		this.color = 'brown',
+		this.numLegs = 4;
+}
