@@ -37,3 +37,21 @@ canary instanceof Bird;
 // task: Create a new instance of the House constructor, calling it myHouse and passing a number of bedrooms. Then, use instanceof to verify that it is an instance of House.
 
 //solution:
+
+function House(numBedrooms) {
+
+	this.numBedrooms = numBedrooms;
+
+}
+
+const myHouse = new House(4);
+
+console.log(myHouse instanceof House); // true
+
+const ownHouse = {
+
+	numBedrooms: 4,
+
+};
+
+console.log(ownHouse instanceof House); // false
