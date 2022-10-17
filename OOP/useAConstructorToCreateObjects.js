@@ -49,9 +49,3 @@ function Dog() {
 }
 
 const hound = new Dog();
-
-hound.color = 'black';
-
-console.log(hound.color);
-
-console.log(Dog.);
