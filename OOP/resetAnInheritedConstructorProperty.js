@@ -26,3 +26,33 @@ duck.constructor
 // task: Fix the code so duck.constructor and beagle.constructor return their respective constructors.
 
 //solution:
+
+function Animal() { }
+
+function Bird(name, color) {
+
+	this.name = name;
+
+	this.color = color;
+
+}
+
+function Dog(name, color) {
+
+	this.name = name;
+
+	this.color = color;
+
+}
+
+Bird.prototype = Object.create(Animal.prototype);
+
+Dog.prototype = Object.create(Animal.prototype);
+
+Bird.prototype.constructor = Bird;
+
+Dog.prototype.constructor = Dog;
+
+let duck = new Bird();
+
+let beagle = new Dog();
