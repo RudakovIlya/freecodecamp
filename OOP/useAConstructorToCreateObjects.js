@@ -41,3 +41,17 @@ blueBird.name;
 // task: Use the Dog constructor from the last lesson to create a new instance of Dog, assigning it to a variable hound.
 
 // solution:
+
+function Dog() {
+	this.name = "Rupert";
+	this.color = "brown";
+	this.numLegs = 4;
+}
+
+const hound = new Dog();
+
+hound.color = 'black';
+
+console.log(hound.color);
+
+console.log(Dog.);
