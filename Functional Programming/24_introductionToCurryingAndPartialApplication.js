@@ -41,3 +41,7 @@ partialFn(10); // 13
 // task: Fill in the body of the add function so it uses currying to add parameters x, y, and z.
 
 // solution:
+
+const add = (x) => (y) => (z) => x + y + z;
+
+console.log(add(10)(23)(45));
