@@ -146,8 +146,6 @@ const watchList = [
 
 // Only change code below this line
 
-const newD = new Date();
-
 const filteredList = watchList.map(item => {
 
 	return {
@@ -159,11 +157,3 @@ const filteredList = watchList.map(item => {
 	}
 
 }).filter(item => item.rating > 8);
-
-// Only change code above this line
-
-//console.log(filteredList);
-
-const starD = new Date();
-
-console.log(starD - newD);
