@@ -16,6 +16,17 @@ Let's try to master this discipline and not alter any variable or object in our 
 
 */
 
-// task: Examine the code in the editor. It's using a method that has side effects in the program, causing incorrect behaviour. The final list of open tabs, stored in finalTabs.tabs, should be ['FB', 'Gitter', 'Reddit', 'Twitter', 'Medium', 'new tab', 'Netflix', 'YouTube', 'Vine', 'GMail', 'Work mail', 'Docs', 'freeCodeCamp', 'new tab'] but the list produced by the code is slightly different. Change Window.prototype.tabClose so that it removes the correct tab.
+// task: Fill in the code for the function incrementer so it returns the value of the global variable fixedValue increased by one
 
 //solution:
+
+// The global variable
+let fixedValue = 4;
+
+function incrementer() {
+	// Only change code below this line
+
+	return fixedValue + 1;
+
+	// Only change code above this line
+}
