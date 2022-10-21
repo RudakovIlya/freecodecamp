@@ -34,7 +34,6 @@ JavaScript's default sorting method is by string Unicode point value, which may 
 
 function alphabeticalOrder(arr) {
 	// Only change code below this line
-
 	return arr.sort();
 	// Only change code above this line
 }
