@@ -18,5 +18,4 @@ function translatePigLatin(str) {
 
 }
 
-// test here
 translatePigLatin("consonant");
