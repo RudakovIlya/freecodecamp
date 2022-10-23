@@ -7,3 +7,16 @@
 - If a word begins with a vowel, just add way at the end.  Translate the provided string to Pig Latin. Input strings are guaranteed to be English words in all lowercase.*/
 
 // solution: 
+
+function translatePigLatin(str) {
+
+	if (str.match(/^[aeiou]/)) return str + "way";
+
+	const cluster = str.match(/^[^aeiou]+/)[0];
+
+	return str.substring(cluster.length) + cluster + "ay";
+
+}
+
+// test here
+translatePigLatin("consonant");
