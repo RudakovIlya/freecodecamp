@@ -9,3 +9,4 @@ function convertHTML(str) {
 }
 
 console.log(convertHTML("Schindler's List"));
+console.log(convertHTML("Schindler's List"));
