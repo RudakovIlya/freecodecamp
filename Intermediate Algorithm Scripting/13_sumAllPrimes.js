@@ -9,10 +9,10 @@ Rewrite sumPrimes so it returns the sum of all prime numbers that are less than 
 function sumPrimes(num) {
 	let sum = 0;
 	nextPrime:
-	for (let i = 2; i <= num; i++) { // Для всех i...
+	for (let i = 2; i <= num; i++) {
 
-		for (let j = 2; j < i; j++) { // проверить, делится ли число..
-			if (i % j == 0) continue nextPrime; // не подходит, берём следующее
+		for (let j = 2; j < i; j++) {
+			if (i % j == 0) continue nextPrime;
 		}
 
 		sum += i;
