@@ -5,3 +5,19 @@
 Rewrite sumPrimes so it returns the sum of all prime numbers that are less than or equal to num. */
 
 // solution: 
+
+function sumPrimes(num) {
+	let sum = 0;
+	nextPrime:
+	for (let i = 2; i <= num; i++) { // Для всех i...
+
+		for (let j = 2; j < i; j++) { // проверить, делится ли число..
+			if (i % j == 0) continue nextPrime; // не подходит, берём следующее
+		}
+
+		sum += i;
+	}
+	return sum
+}
+
+console.log(sumPrimes(10));;
