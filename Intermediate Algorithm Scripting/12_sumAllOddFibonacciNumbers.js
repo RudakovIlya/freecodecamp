@@ -7,3 +7,17 @@ The first two numbers in the Fibonacci sequence are 1 and 1. Every additional nu
 For example, sumFibs(10) should return 10 because all odd Fibonacci numbers less than or equal to 10 are 1, 1, 3, and 5. */
 
 // solution: 
+function sumFibs(num) {
+	let prev = 0;
+	let curr = 1;
+	let result = 0;
+	while (curr <= num) {
+		if (curr % 2 !== 0) {
+			result += curr;
+		}
+		curr += prev;
+		prev = curr - prev;
+	}
+
+	return result;
+}
