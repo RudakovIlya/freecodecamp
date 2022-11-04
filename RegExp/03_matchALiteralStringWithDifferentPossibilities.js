@@ -13,3 +13,7 @@ You can also search for more than just two patterns. You can do this by adding m
 // task: Complete the regex petRegex to match the pets dog, cat, bird, or fish.
 
 //solution:
+
+let petString = 'James has a pet cat.';
+let petRegex = /dog|cat|bird|fish/;
+let result = petRegex.test(petString);
