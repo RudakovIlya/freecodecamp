@@ -23,5 +23,7 @@ The test method here returns true.
 //solution:
 
 let myString = 'Hello, World!';
+
 let myRegex = /Hello/;
+
 let result = myRegex.test(myString);
