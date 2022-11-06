@@ -38,39 +38,29 @@ console.log(ownProps);
 //solution:
 
 function Bird(name) {
+    this.name = name;
 
-	this.name = name;
-
-	this.numLegs = 2;
-
+    this.numLegs = 2;
 }
 
-let canary = new Bird("Tweety");
+let canary = new Bird('Tweety');
 
 let ownProps = [];
 
 for (const key in canary) {
-
-	if (canary.hasOwnProperty(key)) {
-
-		ownProps.push(key)
-
-	}
-
+    if (canary.hasOwnProperty(key)) {
+        ownProps.push(key);
+    }
 }
 
 console.log(ownProps);
 
 class Birds {
+    constructor(name) {
+        this.name = name;
 
-	constructor(name) {
-
-		this.name = name;
-
-		this.numLegs = 2;
-
-	}
-
+        this.numLegs = 2;
+    }
 }
 
 const myBirds = new Birds('Tweety');
@@ -78,13 +68,9 @@ const myBirds = new Birds('Tweety');
 const arrProp = [];
 
 for (const prop in myBirds) {
-
-	if (myBirds.hasOwnProperty(prop)) {
-
-		arrProp.push(prop)
-
-	}
-
+    if (myBirds.hasOwnProperty(prop)) {
+        arrProp.push(prop);
+    }
 }
 
 console.log(arrProp);

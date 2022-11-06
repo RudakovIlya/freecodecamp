@@ -21,31 +21,29 @@ for (let user in users) {
 // solution:
 
 const users = {
-	Alan: {
-		online: false
-	},
-	Jeff: {
-		online: true
-	},
-	Sarah: {
-		online: false
-	}
-}
+    Alan: {
+        online: false,
+    },
+    Jeff: {
+        online: true,
+    },
+    Sarah: {
+        online: false,
+    },
+};
 
 function countOnline(usersObj) {
-	// Only change code below this line
+    // Only change code below this line
 
-	let count = 0;
+    let count = 0;
 
-	for (const key in usersObj) {
-
-		if (usersObj[key].online) {
-			count += 1
-		}
-
-	}
-	return count
-	// Only change code above this line
+    for (const key in usersObj) {
+        if (usersObj[key].online) {
+            count += 1;
+        }
+    }
+    return count;
+    // Only change code above this line
 }
 
 console.log(countOnline(users));

@@ -17,10 +17,9 @@ let todaysWeather = weatherConditions.slice(1, 3);
 // solution:
 
 function forecast(arr) {
-
-	return arr.slice(2, 4)
-
+    return arr.slice(2, 4);
 }
 
-
-console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+console.log(
+    forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms'])
+);

@@ -35,13 +35,11 @@ let popped = greetings.pop();
 // solution:
 
 function popShift(arr) {
+    let popped = arr.pop();
 
-	let popped = arr.pop()
+    let shifted = arr.shift();
 
-	let shifted = arr.shift()
-
-	return [shifted, popped];
-
+    return [shifted, popped];
 }
 
 console.log(popShift(['challenge', 'is', 'not', 'complete']));

@@ -29,11 +29,9 @@ Bird.prototype.isPrototypeOf(duck);
 //solution:
 
 function Dog(name) {
-
-	this.name = name;
-
+    this.name = name;
 }
 
-let beagle = new Dog("Snoopy");
+let beagle = new Dog('Snoopy');
 
 Dog.prototype.isPrototypeOf(beagle); // true

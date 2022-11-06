@@ -25,7 +25,5 @@ function Bird() {
 // solution:
 
 function Dog() {
-	this.name = 'Dima',
-		this.color = 'brown',
-		this.numLegs = 4;
+    (this.name = 'Dima'), (this.color = 'brown'), (this.numLegs = 4);
 }

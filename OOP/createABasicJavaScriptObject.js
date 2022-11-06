@@ -24,9 +24,7 @@ This duck object has two property/value pairs: a name of Aflac and a numLegs of 
 //solution:
 
 let dog = {
+    name: 'Dima',
 
-	name: 'Dima',
-
-	numLegs: 4,
-
+    numLegs: 4,
 };

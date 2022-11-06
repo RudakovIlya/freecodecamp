@@ -9,6 +9,6 @@ const myArray = [];
 let iteration = 5;
 
 while (iteration >= 0) {
-	myArray.push(iteration);
-	iteration--;
+    myArray.push(iteration);
+    iteration--;
 }

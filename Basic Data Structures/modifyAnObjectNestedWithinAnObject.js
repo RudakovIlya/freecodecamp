@@ -33,12 +33,12 @@ nestedObject.data.onlineStatus.busy = 10;
 // solution:
 
 let userActivity = {
-	id: 23894201352,
-	date: 'January 1, 2017',
-	data: {
-		totalUsers: 51,
-		online: 42
-	}
+    id: 23894201352,
+    date: 'January 1, 2017',
+    data: {
+        totalUsers: 51,
+        online: 42,
+    },
 };
 
 userActivity.data.online = 45;

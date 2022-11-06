@@ -22,9 +22,7 @@ fruits.indexOf('pears');
 // solution:
 
 function quickCheck(arr, elem) {
-
-	return arr.indexOf(elem) != -1;
-
+    return arr.indexOf(elem) != -1;
 }
 
 console.log(quickCheck(['squash', 'onions', 'shallots'], 'onions'));

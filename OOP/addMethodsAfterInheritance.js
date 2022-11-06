@@ -41,20 +41,18 @@ duck.fly();
 
 //solution:
 
-function Animal() {
+function Animal() {}
 
-}
+Animal.prototype.eat = function () {
+    console.log('nom nom nom');
+};
 
-Animal.prototype.eat = function () { console.log("nom nom nom"); };
-
-function Dog() { }
+function Dog() {}
 
 Dog.prototype = Object.create(Animal.prototype);
 
 Dog.prototype.bark = function () {
-
-	console.log('Woof!')
-
-}
+    console.log('Woof!');
+};
 
 let beagle = new Dog();

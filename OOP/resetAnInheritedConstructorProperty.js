@@ -2,7 +2,6 @@
 
 // theory: When an object inherits its prototype from another object, it also inherits the supertype's constructor property.
 
-
 // Here's an example:
 
 /*
@@ -27,22 +26,18 @@ duck.constructor
 
 //solution:
 
-function Animal() { }
+function Animal() {}
 
 function Bird(name, color) {
+    this.name = name;
 
-	this.name = name;
-
-	this.color = color;
-
+    this.color = color;
 }
 
 function Dog(name, color) {
+    this.name = name;
 
-	this.name = name;
-
-	this.color = color;
-
+    this.color = color;
 }
 
 Bird.prototype = Object.create(Animal.prototype);

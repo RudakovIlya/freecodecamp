@@ -13,47 +13,35 @@
 //solution:
 
 function factorialize(num) {
+    if (num < 1) {
+        return 1;
+    }
 
-	if (num < 1) {
-
-		return 1;
-
-	}
-
-	return num * factorialize(num - 1);
-
+    return num * factorialize(num - 1);
 }
 
 factorialize(10);
 
 function factorialize(num) {
+    let result = 1;
 
-	let result = 1;
+    for (let i = 1; i <= num; i++) {
+        result *= i;
+    }
 
-	for (let i = 1; i <= num; i++) {
-
-		result *= i;
-
-	}
-
-	return result;
-
+    return result;
 }
 
 console.log(factorialize(5));
 
 function factorialize(num) {
+    let result = 1;
 
-	let result = 1;
+    while (num) {
+        result *= num--;
+    }
 
-	while (num) {
-
-		result *= num--;
-
-	}
-
-	return result;
-
+    return result;
 }
 
 console.log(factorialize(5));

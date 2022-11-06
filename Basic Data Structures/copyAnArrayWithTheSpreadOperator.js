@@ -17,19 +17,15 @@ let thatArray = [...thisArray];
 // solution:
 
 function copyMachine(arr, num) {
+    let newArr = [];
 
-	let newArr = [];
+    while (num >= 1) {
+        newArr.push([...arr]);
 
-	while (num >= 1) {
+        num--;
+    }
 
-		newArr.push([...arr]);
-
-		num--;
-
-	}
-
-	return newArr;
-
+    return newArr;
 }
 
 console.log(copyMachine([true, false, true], 2));

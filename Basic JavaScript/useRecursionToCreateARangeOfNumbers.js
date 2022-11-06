@@ -5,15 +5,14 @@
 //solution:
 
 function rangeOfNumbers(startNum, endNum) {
+    if (endNum < startNum) {
+        return [];
+    } else {
+        const countArray = rangeOfNumbers(startNum, endNum - 1);
+        countArray.push(endNum);
 
-	if (endNum < startNum) {
-		return []
-	} else {
-		const countArray = rangeOfNumbers(startNum, endNum - 1);
-		countArray.push(endNum)
-
-		return countArray
-	}
-};
+        return countArray;
+    }
+}
 
 console.log(rangeOfNumbers(6, 9));

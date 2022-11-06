@@ -5,38 +5,29 @@
 //solution:
 
 function repeatStringNumTimes(str, num) {
+    if (num < 1) {
+        return '';
+    }
 
-	if (num < 1) {
-
-		return '';
-
-	}
-
-	return str + repeatStringNumTimes(str, num - 1);
-
+    return str + repeatStringNumTimes(str, num - 1);
 }
 
-console.log(repeatStringNumTimes("abc", 3));
+console.log(repeatStringNumTimes('abc', 3));
 
 function repeatStringNumTimes(str, num) {
-
-	return num > 0 ? str + repeatStringNumTimes(str, num - 1) : '';
-
+    return num > 0 ? str + repeatStringNumTimes(str, num - 1) : '';
 }
 
-console.log(repeatStringNumTimes("abc", 3));
+console.log(repeatStringNumTimes('abc', 3));
 
 function repeatStringNumTimes(str, num) {
+    let string = '';
 
-	let string = "";
+    for (let i = 0; i < num; i++) {
+        string += str;
+    }
 
-	for (let i = 0; i < num; i++) {
-
-		string += str;
-
-	}
-
-	return string;
+    return string;
 }
 
-console.log(repeatStringNumTimes("abc", 3));
+console.log(repeatStringNumTimes('abc', 3));

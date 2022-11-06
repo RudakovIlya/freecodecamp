@@ -20,11 +20,11 @@ The some method would return true.
 // solution:
 
 function checkPositive(arr) {
-	// Only change code below this line
+    // Only change code below this line
 
-	return arr.some(item => item > 0);
+    return arr.some((item) => item > 0);
 
-	// Only change code above this line
+    // Only change code above this line
 }
 
 checkPositive([1, 2, 3, -4, 5]);

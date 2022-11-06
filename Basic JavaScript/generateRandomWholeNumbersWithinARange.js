@@ -5,11 +5,9 @@
 //solution:
 
 function randomRange(myMin, myMax) {
+    myMin = Math.ceil(myMin);
 
-	myMin = Math.ceil(myMin);
+    myMax = Math.floor(myMax);
 
-	myMax = Math.floor(myMax);
-
-	return Math.floor(Math.random() * (myMax - myMin + 1) + myMin)
-
+    return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
 }

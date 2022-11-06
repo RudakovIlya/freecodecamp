@@ -15,11 +15,11 @@ The returned array would be [1, 2, 3, 4, 5, 6].
 //solution:
 
 function nonMutatingConcat(original, attach) {
-	// Only change code below this line
+    // Only change code below this line
 
-	return original.concat(attach);
+    return original.concat(attach);
 
-	// Only change code above this line
+    // Only change code above this line
 }
 
 const first = [1, 2, 3];

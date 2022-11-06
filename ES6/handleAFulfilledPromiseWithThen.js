@@ -17,14 +17,13 @@ myPromise.then(result => {
 // solution:
 
 const makeServerRequest = new Promise((resolve, reject) => {
+    let responseFromServer = true;
 
-	let responseFromServer = true;
-
-	if (responseFromServer) {
-		resolve("We got the data");
-	} else {
-		reject("Data not received");
-	}
+    if (responseFromServer) {
+        resolve('We got the data');
+    } else {
+        reject('Data not received');
+    }
 });
 
-makeServerRequest.then(result => console.log(result))
+makeServerRequest.then((result) => console.log(result));

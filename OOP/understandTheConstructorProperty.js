@@ -36,26 +36,19 @@ function joinBirdFraternity(candidate) {
 //solution:
 
 function Dog(name) {
-
-	this.name = name;
+    this.name = name;
 }
 
 Dog.prototype.two = 5;
 
-let beagle = new Dog("Snoopy");
+let beagle = new Dog('Snoopy');
 
 function joinDogFraternity(candidate) {
-
-	if (candidate.constructor === Dog) {
-
-		return true
-
-	} else {
-
-		return false
-
-	}
-
+    if (candidate.constructor === Dog) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 console.log(joinDogFraternity(beagle)); // true

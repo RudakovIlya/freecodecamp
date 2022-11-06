@@ -43,27 +43,21 @@ Bird.prototype = {
 //solution:
 
 function Dog(name) {
-	this.name = name;
+    this.name = name;
 }
 
 Dog.prototype = {
+    numLegs: 4,
 
-	numLegs: 4,
+    eat() {
+        console.log('om nom nom');
+    },
 
-	eat() {
-
-		console.log('om nom nom');
-
-	},
-
-	describe() {
-
-		console.log("My name is " + this.name);
-
-	}
-
+    describe() {
+        console.log('My name is ' + this.name);
+    },
 };
 
 const bark = new Dog('Snoopy');
 
-bark.describe() // My name is Snoopy
+bark.describe(); // My name is Snoopy

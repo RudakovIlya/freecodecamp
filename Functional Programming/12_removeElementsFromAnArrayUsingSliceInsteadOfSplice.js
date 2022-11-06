@@ -18,11 +18,11 @@ As we saw in the last challenge, the slice method does not mutate the original a
 //solution:
 
 function nonMutatingSplice(cities) {
-	// Only change code below this line
+    // Only change code below this line
 
-	return cities.slice(0, 3);
+    return cities.slice(0, 3);
 
-	// Only change code above this line
+    // Only change code above this line
 }
-const inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+const inputCities = ['Chicago', 'Delhi', 'Islamabad', 'London', 'Berlin'];
 nonMutatingSplice(inputCities);

@@ -42,13 +42,13 @@ The instanceof method here would return true.
 
 //solution:
 
-function Animal() { }
+function Animal() {}
 
 Animal.prototype = {
-	constructor: Animal,
-	eat: function () {
-		console.log("nom nom nom");
-	}
+    constructor: Animal,
+    eat: function () {
+        console.log('nom nom nom');
+    },
 };
 
 // Only change code below this line

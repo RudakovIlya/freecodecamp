@@ -39,13 +39,11 @@ duck.hasOwnProperty("name");
 //solution:
 
 function Dog(name) {
-
-	this.name = name;
-
+    this.name = name;
 }
 
-let beagle = new Dog("Snoopy");
+let beagle = new Dog('Snoopy');
 
-Dog.prototype.isPrototypeOf(beagle);  // yields true
+Dog.prototype.isPrototypeOf(beagle); // yields true
 
 Object.prototype.isPrototypeOf(Dog.prototype);

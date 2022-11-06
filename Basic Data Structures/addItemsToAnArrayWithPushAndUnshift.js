@@ -29,13 +29,11 @@ romanNumerals.push(twentyThree);
 // solution:
 
 function mixedNumbers(arr) {
+    arr.push(7, 'VIII', 9);
 
-	arr.push(7, 'VIII', 9);
+    arr.unshift('I', 2, 'three');
 
-	arr.unshift('I', 2, 'three')
-
-	return arr;
-
+    return arr;
 }
 
 console.log(mixedNumbers(['IV', 5, 'six']));

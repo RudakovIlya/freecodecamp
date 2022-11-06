@@ -19,10 +19,10 @@ Dot notation is used on the object name, duck, followed by the name of the prope
 //solution:
 
 let dog = {
-	name: "Spot",
-	numLegs: 4
+    name: 'Spot',
+    numLegs: 4,
 };
 
-console.log(dog.name)
+console.log(dog.name);
 
-console.log(dog.numLegs)
+console.log(dog.numLegs);
