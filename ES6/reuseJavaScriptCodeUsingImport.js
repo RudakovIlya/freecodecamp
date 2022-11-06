@@ -4,7 +4,10 @@
 
 //solution:
 
-import { uppercaseString, lowercaseString } from './useExportToShareACodeBlock.js'
+import {
+    uppercaseString,
+    lowercaseString,
+} from './useExportToShareACodeBlock.js';
 
-uppercaseString("hello");
-lowercaseString("WORLD!");
+uppercaseString('hello');
+lowercaseString('WORLD!');

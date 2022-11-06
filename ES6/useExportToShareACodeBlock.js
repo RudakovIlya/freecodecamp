@@ -5,11 +5,11 @@
 //solution:
 
 const uppercaseString = (string) => {
-	return string.toUpperCase();
-}
+    return string.toUpperCase();
+};
 
 const lowercaseString = (string) => {
-	return string.toLowerCase()
-}
+    return string.toLowerCase();
+};
 
-export { uppercaseString, lowercaseString }
+export { uppercaseString, lowercaseString };

@@ -4,10 +4,9 @@
 
 //solution:
 
-
 const bicycle = {
-	gear: 2,
-	setGear(newGear) {
-		this.gear = newGear;
-	}
+    gear: 2,
+    setGear(newGear) {
+        this.gear = newGear;
+    },
 };

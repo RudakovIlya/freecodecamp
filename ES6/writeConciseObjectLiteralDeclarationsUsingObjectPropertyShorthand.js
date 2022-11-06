@@ -5,11 +5,10 @@
 //solution:
 
 const createPerson = (name, age, gender) => {
-	return {
-		name,
-		age,
-		gender,
-	};
-
+    return {
+        name,
+        age,
+        gender,
+    };
 };
-createPerson("Zodiac Hasbro", 56, "male");
+createPerson('Zodiac Hasbro', 56, 'male');
