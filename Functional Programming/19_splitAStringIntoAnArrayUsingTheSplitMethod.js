@@ -22,11 +22,11 @@ Since strings are immutable, the split method makes it easier to work with them.
 // solution:
 
 function splitify(str) {
-	// Only change code below this line
+    // Only change code below this line
 
-	return str.split(/\W/);
+    return str.split(/\W/);
 
-	// Only change code above this line
+    // Only change code above this line
 }
 
-splitify("Hello World,I-am code");
+splitify('Hello World,I-am code');

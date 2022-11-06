@@ -10,10 +10,10 @@ theory: Now that you have worked through a few challenges using higher-order fun
 
 //solution:
 
-const squareList = arr => {
-
-	return arr.filter(item => Number.isInteger(item) && item > 0).map(item => item ** 2);
-
+const squareList = (arr) => {
+    return arr
+        .filter((item) => Number.isInteger(item) && item > 0)
+        .map((item) => item ** 2);
 };
 
 const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);

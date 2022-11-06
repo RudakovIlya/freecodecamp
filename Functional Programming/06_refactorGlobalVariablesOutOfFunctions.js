@@ -16,30 +16,29 @@ Adding one to a number is not very exciting, but we can apply these principles w
 
 //solution:
 
-const bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
+const bookList = [
+    'The Hound of the Baskervilles',
+    'On The Electrodynamics of Moving Bodies',
+    'Philosophiæ Naturalis Principia Mathematica',
+    'Disquisitiones Arithmeticae',
+];
 
 function add(arr, bookName) {
+    let newArr = [...arr];
 
-	let newArr = [...arr];
+    newArr.push(bookName);
 
-	newArr.push(bookName);
-
-	return newArr;
-
+    return newArr;
 }
 
 function remove(arr, bookName) {
+    let newArr = [...arr];
 
-	let newArr = [...arr];
+    const book_index = newArr.indexOf(bookName);
 
-	const book_index = newArr.indexOf(bookName);
+    if (book_index >= 0) {
+        newArr.splice(book_index, 1);
 
-	if (book_index >= 0) {
-
-		newArr.splice(book_index, 1);
-
-		return newArr;
-
-	}
-
+        return newArr;
+    }
 }

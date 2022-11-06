@@ -17,9 +17,9 @@ str would have a value of the string Hello World.
 // solution:
 
 function sentensify(str) {
-	// Only change code below this line
+    // Only change code below this line
 
-	return str.split(/\W/).join(' ');
+    return str.split(/\W/).join(' ');
 
-	// Only change code above this line
+    // Only change code above this line
 }

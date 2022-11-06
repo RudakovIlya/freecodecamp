@@ -15,7 +15,5 @@ Many content management sites (CMS) have the titles of a post added to part of t
 // solution:
 
 function urlSlug(title) {
-
-	return title.toLowerCase().trim().split(/\s+/).join('-')
-
+    return title.toLowerCase().trim().split(/\s+/).join('-');
 }
