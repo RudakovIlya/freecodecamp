@@ -5,7 +5,5 @@
 //solution:
 
 function randomFraction() {
-
-	return Math.random();
-
+    return Math.random();
 }

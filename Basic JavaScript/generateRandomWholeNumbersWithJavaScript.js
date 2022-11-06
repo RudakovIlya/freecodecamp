@@ -5,7 +5,5 @@
 //solution:
 
 function randomWholeNum() {
-
-	return Math.floor(Math.random() * 10);
-
+    return Math.floor(Math.random() * 10);
 }
