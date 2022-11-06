@@ -17,11 +17,9 @@ let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
 // solution:
 
 function spreadOut() {
+    let fragment = ['to', 'code'];
 
-	let fragment = ['to', 'code'];
+    let sentence = ['learning', ...fragment, 'is', 'fun'];
 
-	let sentence = ['learning', ...fragment, 'is', 'fun'];
-
-	return sentence
-
+    return sentence;
 }

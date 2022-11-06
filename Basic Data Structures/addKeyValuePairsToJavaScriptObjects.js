@@ -58,9 +58,9 @@ tekkenCharacter[eyes] = 'brown';
 // solution:
 
 let foods = {
-	apples: 25,
-	oranges: 32,
-	plums: 28
+    apples: 25,
+    oranges: 32,
+    plums: 28,
 };
 
 foods.bananas = 13;

@@ -17,24 +17,21 @@ let inventory = foods[selectedFood];
 // solution:
 
 let foods = {
-	apples: 25,
+    apples: 25,
 
-	oranges: 32,
+    oranges: 32,
 
-	plums: 28,
+    plums: 28,
 
-	bananas: 13,
+    bananas: 13,
 
-	grapes: 35,
+    grapes: 35,
 
-	strawberries: 27
-
+    strawberries: 27,
 };
 
 function checkInventory(scannedItem) {
-
-	return foods[scannedItem]
-
+    return foods[scannedItem];
 }
 
-console.log(checkInventory("apples"));
+console.log(checkInventory('apples'));
