@@ -4,21 +4,24 @@
 
 If all letters are present in the range, return undefined. */
 
-// solution: 
+// solution:
 
 function fearNotLetter(str) {
+    const newArr = str.split('').map((item) => item.charCodeAt());
 
-	const newArr = str.split('').map(item => item.charCodeAt());
-
-	return newArr.reduce((accum, item) => accum += item) === 2847 ? undefined : String.fromCharCode(newArr.find((item, i, arr) => {
-		if (arr[i + 1] - item === 2) {
-			return arr[i]
-		}
-	}) + 1);
+    return newArr.reduce((accum, item) => (accum += item)) === 2847
+        ? undefined
+        : String.fromCharCode(
+              newArr.find((item, i, arr) => {
+                  if (arr[i + 1] - item === 2) {
+                      return arr[i];
+                  }
+              }) + 1
+          );
 }
 
-console.log(fearNotLetter("abce"));
-console.log(fearNotLetter("abcdefghjklmno"));
-console.log(fearNotLetter("stvwx"));
-console.log(fearNotLetter("bcdf"));
-console.log(fearNotLetter("abcdefghijklmnopqrstuvwxyz"));
+console.log(fearNotLetter('abce'));
+console.log(fearNotLetter('abcdefghjklmno'));
+console.log(fearNotLetter('stvwx'));
+console.log(fearNotLetter('bcdf'));
+console.log(fearNotLetter('abcdefghijklmnopqrstuvwxyz'));

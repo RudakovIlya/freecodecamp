@@ -8,38 +8,34 @@ The unique numbers should be sorted by their original order, but the final array
 
 Check the assertion tests for examples.*/
 
-// solution: 
+// solution:
 
 function uniteUnique(...arr) {
+    const newArr = [];
 
-	const newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        for (let k = 0; k < arr[i].length; k++) {
+            newArr.push(arr[i][k]);
+        }
+    }
 
-	for (let i = 0; i < arr.length; i++) {
-
-		for (let k = 0; k < arr[i].length; k++) {
-
-			newArr.push(arr[i][k])
-
-		}
-
-	}
-
-	return Array.from(new Set(newArr))
+    return Array.from(new Set(newArr));
 }
 
 console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
 
 function uniteUnique(...arr) {
+    return Array.from(
+        new Set(
+            arr.reduce((accum, item) => {
+                accum.push(...item);
 
-	return Array.from(new Set(arr.reduce((accum, item) => {
-
-		accum.push(...item)
-
-		return accum
-
-	}, [])))
+                return accum;
+            }, [])
+        )
+    );
 }
 
-const uniteUnique = (...arr) => [...new Set(arr.flat(1))]
+const uniteUnique = (...arr) => [...new Set(arr.flat(1))];
 
 console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
