@@ -39,9 +39,7 @@ canary instanceof Bird;
 //solution:
 
 function House(numBedrooms) {
-
-	this.numBedrooms = numBedrooms;
-
+    this.numBedrooms = numBedrooms;
 }
 
 const myHouse = new House(4);
@@ -49,9 +47,7 @@ const myHouse = new House(4);
 console.log(myHouse instanceof House); // true
 
 const ownHouse = {
-
-	numBedrooms: 4,
-
+    numBedrooms: 4,
 };
 
 console.log(ownHouse instanceof House); // false

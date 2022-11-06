@@ -53,31 +53,23 @@ plane.fly();
 //solution:
 
 let bird = {
+    name: 'Donald',
 
-	name: "Donald",
-
-	numLegs: 2
-
+    numLegs: 2,
 };
 
 let boat = {
+    name: 'Warrior',
 
-	name: "Warrior",
-
-	type: "race-boat"
-
+    type: 'race-boat',
 };
 
 // Only change code below this line
 
 function glideMixin(obj) {
-
-	obj.glide = () => {
-
-		console.log('add mixin')
-
-	}
-
+    obj.glide = () => {
+        console.log('add mixin');
+    };
 }
 glideMixin(boat);
 

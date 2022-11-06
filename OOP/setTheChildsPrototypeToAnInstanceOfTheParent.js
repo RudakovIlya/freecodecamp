@@ -25,25 +25,23 @@ duck.eat();
 
 //solution:
 
-function Animal() { }
+function Animal() {}
 
 Animal.prototype = {
-	constructor: Animal,
-	eat: function () {
-		console.log("nom nom nom");
-	}
+    constructor: Animal,
+    eat: function () {
+        console.log('nom nom nom');
+    },
 };
 
 function Dog(name, color) {
+    this.name = name;
 
-	this.name = name;
-
-	this.color = color;
-
+    this.color = color;
 }
 
-Dog.prototype = Object.create(Animal.prototype)
+Dog.prototype = Object.create(Animal.prototype);
 
 let beagle = new Dog('Snoopy', 'black');
 
-beagle.eat() // nom nom nom
+beagle.eat(); // nom nom nom

@@ -21,13 +21,12 @@ The example adds the sayName method, which is a function that returns a sentence
 
 // solution:
 
-
 let dog = {
-	name: "Spot",
-	numLegs: 4,
-	sayLegs() {
-		return `This dog has ${dog.numLegs} legs.`
-	}
+    name: 'Spot',
+    numLegs: 4,
+    sayLegs() {
+        return `This dog has ${dog.numLegs} legs.`;
+    },
 };
 
 dog.sayLegs();
