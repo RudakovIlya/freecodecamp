@@ -15,6 +15,10 @@ And here match returns the value ["Repeat", "Repeat", "Repeat"]
 
 */
 
-// task: Apply the .match() method to extract the string coding.
+// task: Using the regex starRegex, find and extract both Twinkle words from the string twinkleStar.
 
 //solution:
+
+let twinkleStar = 'Twinkle, twinkle, little star';
+let starRegex = /change/; // Change this line
+let result = twinkleStar; // Change this line
