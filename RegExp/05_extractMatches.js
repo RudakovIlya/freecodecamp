@@ -20,6 +20,10 @@ Note that the .match syntax is the "opposite" of the .test method you have been 
 
 */
 
-// task: Write a regex fccRegex to match freeCodeCamp, no matter its case. Your regex should not match any abbreviations or variations with spaces.
+// task: Apply the .match() method to extract the string coding.
 
 //solution:
+
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; // Change this line
+let result = extractStr.match(codingRegex); // Change this line
