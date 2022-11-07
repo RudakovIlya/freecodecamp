@@ -20,5 +20,5 @@ And here match returns the value ["Repeat", "Repeat", "Repeat"]
 //solution:
 
 let twinkleStar = 'Twinkle, twinkle, little star';
-let starRegex = /change/; // Change this line
-let result = twinkleStar; // Change this line
+let starRegex = /Twinkle/gi; // Change this line
+let result = twinkleStar.match(starRegex); // Change this line
